@@ -18,14 +18,17 @@ The problem I have was DJI's software had two major flaws -
 
 
 ## Software Used
-1. Hugin
-2. Windows Batch 
-3. 
+1. Windows 10 was used with standard bat files. 
+2. Hugin
+
+  Version: 2021.0.0.52df0f76c700 built by Thomas
+  Path to resources: C:\Program Files\Hugin\share\hugin\xrc\
+  Path to data: C:\Program Files\Hugin\share\hugin\data\
 
 
 ## PC Used 
-Just for reference - Win 10, i7, 64gb, RTX 2070 Super
-Mac or liinux could be used with the scripts, but some modifications would be needed, mostly just syntax of the bat files.  
+ - Just for reference - Win 10, i7, 64gb, RTX 2070 Super
+ - Mac or liinux could be used with the scripts, but some modifications would be needed, mostly just syntax of the bat files.  
 
 
 ## General Steps
