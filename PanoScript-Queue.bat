@@ -47,7 +47,7 @@ REM Stitch the output - un-rem the next line if you want the script to stitch ri
 REM "C:\Program Files\Hugin\bin\hugin_executor" --stitching --prefix=%current_folder% %current_folder%.pto
 
 REM send to batch to run sequentially.
-"C:\Program Files\Hugin\bin\PTBatcherGui.exe" --batch %current_folder%.pto %current_folder%.pano
+"C:\Program Files\Hugin\bin\PTBatcherGui.exe" --batch %current_folder%.pto
 
 
 REM Rename the output to the date it was captured to help clarify the filename.
