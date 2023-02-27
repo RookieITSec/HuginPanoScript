@@ -1,6 +1,6 @@
 # HuginPanoScript
 I have been working to build a better process to build pano images from my DJI Mini 2 drone.  
-- Note - I am 100% NOT a programmer.  There is probably better ways to do this.  If you find some, let me know!
+- Note - I am 100% NOT a programmer.  This repo is largely for my own reference in the future.  There is probably better ways to do this.  If you find some, let me know!
 
 
 ## Problem Statement
@@ -23,6 +23,7 @@ The problem I have was DJI's software had two major flaws -
   - Version: 2021.0.0.52df0f76c700 built by Thomas
   - Path to resources: C:\Program Files\Hugin\share\hugin\xrc\
   - Path to data: C:\Program Files\Hugin\share\hugin\data\
+  - Note - version is probably not overly important to match, as long as it's close.  I dont think I am doing anything too crazy or unique.  
 
 
 ## PC Used 
