@@ -32,23 +32,27 @@ The problem I have was DJI's software had two major flaws -
 
 
 ## General Steps
-1. Get the files ready.
-2. Run the batch file to deploy the Hugin Script.
-3. Let the Hugin Script Run
-4. Monitor Batcher tool thing.
+1. Install the software.
+2. Get the files ready.
+3. Run the batch file to deploy the Hugin Script.
+4. Let the Hugin Script Run
+5. Monitor Batcher tool thing.
 
 
-### 1. Get the files Ready.
+### 1. Install the software.
 
 
-### 2. Run Batch file to deploy the Hugin Script.
+### 2. Get the files Ready.
 
 
-### 3. Let the Hugin Script Run
+### 3. Run Batch file to deploy the Hugin Script.
 
 
-### 4. Monitor Batcher tool thing.
-The above script will send the individual PTO files to the PTBatcher tool from Hugin and 
+### 4. Let the Hugin Script Run
+
+
+### 5. Monitor Batcher tool thing.
+The above script will send the individual PTO files to the PTBatcher tool from Hugin and run the stitching operations sequentially.
 
 
 
