@@ -1,12 +1,12 @@
 # HuginPanoScript
-I have been working to build a better process to build pano images from my DJI Mini 2 drone.  
+I have been working to build a better process to build 360/Sphere pano images from my DJI Mini 2 drone.  
 - Note - I am 100% NOT a programmer.  This repo is largely for my own reference in the future.  There is probably better ways to do this.  If you find some, let me know!
 
 
 ## Problem Statement
 The problem I have was DJI's software had two major flaws - 
-1. The Pano constrcuted does NOT have gps tags.  The individual images do have gps, but the Pano stitching in DJI's app does not include the metadata.
-2. The Pano constructed does not use full res images.  The images are significantly scalled down and I want higher res panos.  
+1. The 360/Sphere Pano constrcuted does NOT have gps tags.  The individual images do have gps, but the Pano stitching in DJI's app does not include the metadata.
+2. The 360/Sphere Pano constructed does not use full res images.  The images are significantly scalled down and I want higher res panos.  
 
 
 ## Objectives
