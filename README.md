@@ -60,10 +60,16 @@ Notes:
 ### 4. Let the Hugin Script Run
   - This process will take some time 
 
-### 5. Monitor Batcher tool thing.
+### 5. Monitor PTBatcher tool thing.
 The above script will send the individual PTO files to the PTBatcher tool from Hugin and run the stitching operations sequentially.
 
 
 
 
+
+## Thank you to the various sources of info that lead to this write-up.
+1. Panotools Hugin scripting writeup https://wiki.panotools.org/Panorama_scripting_in_a_nutshell#Creating_hugin_projects_on_the_command-line
+2. Hugin Google Groups - https://groups.google.com/g/hugin-ptx
+3. EXIFTool is used by Hugin automatically - https://exiftool.org/ and/or https://exiftool.sourceforge.net/
+4. DJI Mini 2 and DJI Fly App - For making a fairly slick drone for taking 360 photos and software that missed a few features....so far.  
 
