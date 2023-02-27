@@ -46,10 +46,11 @@ The problem I have was DJI's software had two major flaws -
 
 
 ### 3. Run Batch file to deploy the Hugin Script.
-
+  - The DeployScript.bat in this repo is the script I currently use.  This may be tweaked as I move forward.
+  - The script could be modified to run the Hugin Script in the next step sequentially by tweaking the "Start" line to not open a new command prompt.  This would help to limit the resources used on the computer, but will not take advantasge of multi core/threaded processors.  
 
 ### 4. Let the Hugin Script Run
-
+  - This process will take some time 
 
 ### 5. Monitor Batcher tool thing.
 The above script will send the individual PTO files to the PTBatcher tool from Hugin and run the stitching operations sequentially.
