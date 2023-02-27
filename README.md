@@ -6,7 +6,7 @@ I have been working to build a better process to build 360/Sphere pano images fr
 ## Problem Statement
 The problem I have was DJI's software had two major flaws - 
 1. The 360/Sphere Pano constrcuted does NOT have gps tags.  The individual images do have gps, but the Pano stitching in DJI's app does not include the metadata.
-2. The 360/Sphere Pano constructed does not use full res images.  The images are significantly scalled down and I want higher res panos.  
+2. The 360/Sphere Pano constructed does not use full res images.  The images are significantly scaled down and I want higher res panos.  
 
 
 ## Objectives
@@ -40,14 +40,22 @@ The problem I have was DJI's software had two major flaws -
 
 
 ### 1. Install the software.
-
+1. Hugin is open source and easy to get/install - https://sourceforge.net/projects/hugin/files/latest/download
+2. Get the latest version and install it.  I used the defaults and if you change the install locations, the script may need to be tweaked to follow the locations. 
 
 ### 2. Get the files Ready.
+1. I use a local drive on my PC to store the files from the Drone to keep things as fast as possible.
+2. The DJI Mini 2 saves each set of images for a pano sphere in a individual directory on the memory card from the drone.  
+3. I copy all the individual files from the Panorama folder on the memory card to a local folder like d:\2023-02-27-DronePanos\
 
 
 ### 3. Run Batch file to deploy the Hugin Script.
+1. The deploy script contains two variables you will need to tweak.  The location of the Script you want to run and the location of your target folders.
+2. Edit the deploy script from this repo with the correct locations in the variables.  I have REM comments in the bat file to help also.
+Notes:
   - The DeployScript.bat in this repo is the script I currently use.  This may be tweaked as I move forward.
   - The script could be modified to run the Hugin Script in the next step sequentially by tweaking the "Start" line to not open a new command prompt.  This would help to limit the resources used on the computer, but will not take advantasge of multi core/threaded processors.  
+
 
 ### 4. Let the Hugin Script Run
   - This process will take some time 
