@@ -58,7 +58,9 @@ Notes:
 
 
 ### 4. Let the Hugin Script Run
+  - The script is located in this repo - PanoScript-Queue.bat
   - This process will take some time 
+  
 
 ### 5. Monitor PTBatcher tool thing.
 The above script will send the individual PTO files to the PTBatcher tool from Hugin and run the stitching operations sequentially.
