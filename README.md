@@ -70,7 +70,7 @@ The above script will send the individual PTO files to the PTBatcher tool from H
 1. Determine if the Panos are good.  
 2. I typically use the windows search function to find all the new panos in the various directories and then copy them out to a single directory for review and next steps.  Moving them saves a step later on if you want to go back and edit/re-run a stitching for an individual item as leaving the new pano in the directory and re-running the bat file hugin script from this project will ingest the pano and all the matching images and cause chaos.  
 3. If you want to add them to a google photos album, upload to Google photos like any other photo.  Google Photos will read these as panos and display them to viewers as panos, which is nice.
-4. If you want to add them to Google Maps, check out my other Github project here - 
+4. If you want to add them to Google Maps, check out my other Github project here - https://github.com/RookieITSec/GoogleMaps360PhotoUpload
 
 
 
