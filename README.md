@@ -10,11 +10,11 @@ The problem I have was DJI's software had two major flaws -
 
 
 ## Objectives
-1. Highest resolution possible.
-2. GPS Coords in the metadata.
-3. Batch processing for all directories in a specific location.  
-4. Patching of "black holes" where image data does not exist - missing images or top of image where the drone did not capture data.
-5. Correctly reading low contrast images and adding control points via scripting.  Snow and water both cause problems with stitching.  
+1. Highest resolution possible.  (solved)
+2. GPS Coords in the metadata.  (solved)
+3. Batch processing for all directories in a specific location.  (solved)
+4. Patching of "black holes" where image data does not exist - missing images or top of image where the drone did not capture data. (working on it.)
+5. Correctly reading low contrast images and adding control points via scripting.  Snow and water both cause problems with stitching.  (at a dead end maybe)
 
 
 ## Software Used
