@@ -1,0 +1,34 @@
+REM 2023-08-21 - RCB
+REM - This script deploys the pano script bat file to each directory containing the pano files from a drone flight.  Modify the two "set" variables to the script to be deployed and the location of the pano file folders.  
+REM - keep in mind this script will kick off a bunch of processor intensive tasks.
+
+@echo on
+REM you could set this to off if you wanted, but I like seeing it work.
+
+set "script=D:\PanoScripts\PanoScript-Queue-v2.bat"
+REM This variable should be the location of the Hugin script file. 
+
+set "directory=D:\All Panos\"
+REM This variable should be the location of the folders containing Pano images.  The DJI drone puts each pano set into a unique directory.
+
+set "template=D:\PanoScripts\template.pto"
+REM This variable is the location of the template.  A template is needed for the prealigned parameters.  Prealigned is needed due to some images not containing sufficient detail to find control points.
+REM The template file is just a working PTO file from another project that came out perfectly.  I took a PTO file where the resulting image had no issues at all.  I built the PTO file by running the https://github.com/RookieITSec/HuginPanoScript/blob/main/PanoScript-Queue.bat script on an image set.  I then copied the pto file as template.pto to the location used in this variable.
+
+
+for /D %%i in ("%directory%/*") do (
+  REM This loop reads in the list of files from the location specified in the directory vartiable above.  It runs the below two steps on each folder in the directory location.
+  
+  copy "%script%" "%%i"
+  copy "%template%" "%%i"
+  REM - the above two commands copy the needed files to the specific directories of the images.  
+  
+  start cmd /c "D: && cd /d %%i && PanoScript-Queue-v2.bat"
+  REM this kicks off a new command window for each folder of images.  
+  
+  timeout /t 30
+  REM this is the timeout for kicking off the next folder in the process.  It can overwhelm your computer if too many run at once, so depending on your processing power, you may want to tweak this.  
+)
+
+pause
+REM I like the pause so I can review messages if needed.  
