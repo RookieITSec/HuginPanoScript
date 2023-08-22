@@ -3,7 +3,7 @@ REM - This script deploys the pano script bat file to each directory containing 
 REM - keep in mind this script will kick off a bunch of processor intensive tasks.
 
 @echo on
-set "script=D:\Photo Location Testing\PanoScript-Queue-v1.bat"
+set "script=D:\Photo Location Testing\v1-PanoScript-Queue.bat"
 REM This variable should be the location of the Hugin script file.  
 
 
@@ -18,7 +18,7 @@ for /D %%i in ("%directory%/*") do (
   copy "%script%" "%%i"
     REM This step copies the script to each folder in the directory.   
   
-  start cmd /c "D: && cd /d %%i && PanoScript-Queue-v1.bat"
+  start cmd /c "D: && cd /d %%i && v1-PanoScript-Queue.bat"
     REM This step launches a new command window from the folder in the directory to execute the bat file.  
   
 )
